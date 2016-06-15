@@ -1,0 +1,14 @@
+img {
+	text-align: center;
+	display: block;
+}
+
+body {
+
+}
+
+#btn {
+	background-color: blue;
+	font-weight: bold;
+	font-color: white;
+}

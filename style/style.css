@@ -1,0 +1,149 @@
+body {
+	font-family: sans-serif;
+	font-size: 13px;
+	margin: 0 auto;
+	/*don't need position: relative; here, won't do anything*/
+}
+
+/*header beginning*/
+
+.nav_bar {
+	margin-top: 20px;
+	text-align: right;
+}
+.nav_bar ul {
+	text-align: right;
+	list-style-type: none;
+	margin: 0; /*margin/padding used to remove all settings*/
+	padding: 0;
+}
+li {
+	display: inline-block; 
+	/*has to be with li, do it .nav_bar and it doesn't do it properly*/
+	margin-right: 15px; /*spaces out the text for each one */
+}
+li a {
+	text-decoration: none; /*need this to get rid of the underlined parts for the link*/
+	color: #292626;
+}
+li a:hover {
+	text-decoration: underline;
+}
+
+.nav_bar a img{
+	vertical-align: middle; /*usually with images, where the text is placed on the top end of the image or the bottom*/
+	padding: 0; /*somehow keeps everything in line*/
+	margin: 0 auto; /*somehow keeps everything in line*/
+	display: inline-block; /*finally straightens the icon*/
+	opacity: 0.7;
+}
+.btn1 {
+	background-color: #4285f4;
+	padding: 7px 12px;
+	font-weight: bold;
+	border-radius: 3px;
+	border: 1px solid #4285f4; /*add the border color so can't see the border*/
+	text-decoration: none;
+	pointer-events: none;
+}
+
+.btn1 a /*need to go to btn1 a not just btn one for it to turn white, needs to directly affect it in order to work, kinda how css works*/ { 
+	color: white;
+}
+
+
+
+
+.clearix {
+	clear: both; /*not sure what this is for...*/
+}
+
+/*header end*/
+/*center page beg.*/
+
+img {
+	margin: 20px auto; /*helps move the image closer to the search box*/
+	/*^ also this image needs to be under form in html*/
+	display: block; /*helps center the image*/
+	
+}
+
+.form {
+	margin-top: 150px; /*when putting the image super close, need this to bring it down*/
+	text-align: center; /*placing this here instead of in .main-search, works better cause overall*/
+}
+
+.main-search {
+	width: 480px;
+	height: 30px;
+	margin: 0 auto;
+	margin-bottom: 200px;
+	margin-left: 200px;
+	font-size: 13px;
+}
+
+.material-icons{
+	position: relative;
+	top: 9px;
+	left: -30px;
+	color: #4285f4;
+	padding: 10px auto;
+	font-size: 30px;
+}
+
+.btn2 {
+	position: relative;
+    background-color: #F1F1F1;
+    color: #5F5F5F;
+    font-size: 12px;
+    padding: 10px; /*makes the button bigger*/
+    top: 60px;
+    left: -400px; /*use top and left literally to move the button lol*/
+    font-weight: bold;
+    border: none; /*what makes it look nice lol*/
+}
+
+.btn3 {
+	position: relative;
+    background-color: #F1F1F1;
+    color: #5F5F5F;
+    font-size: 12px;
+    padding: 10px; /*makes the button bigger*/
+    top: 60px;
+    right: 400px; /*use top and left literally to move the button lol*/
+    font-weight: bold;
+    border: none; /*what makes it look nice lol*/
+}
+
+/*center page end*/
+/*footer*/
+
+footer {
+    position: absolute;
+	width: 100%;
+	text-align: center;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #F1F1F1;
+	line-height: 20px; /*makes the footer color a certain height*/
+
+    /*background-color: #F1F1F1;
+    height: 40px;
+    display: inline;
+    list-style-type: none;*/
+}
+
+.left_footer {
+	float: left;
+	margin-left: 20px;
+}
+
+.left_footer a {color: #666;}
+
+.right_footer {
+	float: right;
+	margin-right: 20px;
+}
+.right_footer a {color: #666;}
+
